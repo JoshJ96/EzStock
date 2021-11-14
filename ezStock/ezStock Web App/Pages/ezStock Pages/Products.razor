@@ -1,0 +1,70 @@
+﻿@page "/Data/Products"
+
+@using ezStock_Data_Access_Library;
+@using ezStock_Data_Access_Library.Models;
+@using ezStock_Web_App.Models;
+
+@inject IProductData _db;
+
+<h1>Products Page</h1>
+
+<h4>Insert New Product</h4>
+<EditForm Model="@newProduct" OnValidSubmit="@InsertProduct">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <InputText id="Name" @bind-Value="newProduct.Name" />
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+<h4>Current Products</h4>
+
+@if (products == null)
+{
+    <p><em>Loading Data...</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ProductModel> products;
+    private DisplayProductModel newProduct = new DisplayProductModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await _db.GetProducts();
+    }
+
+    private async Task InsertProduct()
+    {
+        ProductModel p = new ProductModel
+            {
+                Id = newProduct.Id,
+                Name = newProduct.Name
+            };
+        await _db.InsertProduct(p);
+
+        await _db.GetProducts();
+
+        newProduct = new DisplayProductModel();
+    }
+}

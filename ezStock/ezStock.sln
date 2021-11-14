@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Data Access Library", "ezStock Data Access Library\ezStock Data Access Library.csproj", "{CA9776D1-7165-477F-B2B5-907440AF9C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ezStock Data Access Library", "ezStock Data Access Library\ezStock Data Access Library.csproj", "{CA9776D1-7165-477F-B2B5-907440AF9C04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Web API", "ezStock Web API\ezStock Web API.csproj", "{3A7AF516-833E-4CC0-9748-F04F9D5B5E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ezStock Web API", "ezStock Web API\ezStock Web API.csproj", "{3A7AF516-833E-4CC0-9748-F04F9D5B5E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Desktop", "ezStock Desktop\ezStock Desktop.csproj", "{1715FBB3-69FA-4CE5-82E1-6D83EDE00D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ezStock Desktop", "ezStock Desktop\ezStock Desktop.csproj", "{1715FBB3-69FA-4CE5-82E1-6D83EDE00D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Unit Tests", "ezStock Unit Tests\ezStock Unit Tests.csproj", "{974F42F2-F0F9-4740-8E82-3D8041BAB1E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ezStock Unit Tests", "ezStock Unit Tests\ezStock Unit Tests.csproj", "{974F42F2-F0F9-4740-8E82-3D8041BAB1E9}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ezStock Database", "ezStock Database\ezStock Database.sqlproj", "{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Web Application", "ezStock Web Application\ezStock Web Application.csproj", "{7B460F10-B487-4725-BA88-2473E80C52D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezStock Web App", "ezStock Web App\ezStock Web App.csproj", "{1C7AE4EA-2BF6-4DBC-B37E-41B418AF9B07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,16 +35,10 @@ Global
 		{974F42F2-F0F9-4740-8E82-3D8041BAB1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{974F42F2-F0F9-4740-8E82-3D8041BAB1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{974F42F2-F0F9-4740-8E82-3D8041BAB1E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{676165D4-BFEF-4E1E-BD5E-18ABD16F77A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{7B460F10-B487-4725-BA88-2473E80C52D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B460F10-B487-4725-BA88-2473E80C52D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B460F10-B487-4725-BA88-2473E80C52D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B460F10-B487-4725-BA88-2473E80C52D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7AE4EA-2BF6-4DBC-B37E-41B418AF9B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7AE4EA-2BF6-4DBC-B37E-41B418AF9B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7AE4EA-2BF6-4DBC-B37E-41B418AF9B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7AE4EA-2BF6-4DBC-B37E-41B418AF9B07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
